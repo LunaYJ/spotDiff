@@ -1,0 +1,106 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 0 none;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+#game {
+    width: 100%;
+    height: 100%;
+}
+.gamePage {
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+.bg {
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+img.bg, img.layer {
+    display: none;
+}
+.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+.targetBound {
+    z-index: 10000;
+    position: absolute;
+    top: 16.5%;
+    left: 2%;
+    width: 44%;
+}
+#game_1 .bg {
+    background: url("game_1/images/bg2.jpg") no-repeat scroll 0 0 transparent;
+    background-size: cover;
+    width: 100%;
+    display: block;
+}
+#game_1 .layer {
+    background: url("game_1/images/bg_top.png") no-repeat scroll 0 0 transparent;
+    background-size: cover;
+}
+#game_1 .target {
+    position: absolute;
+    z-index: 100;
+    top: 16%;
+    left: 2%;
+    width: 40%;
+}
+#game_1 .targetBound {
+    height: 6%;
+}
+.target img {
+    width: 100%;
+    height: auto;
+}
+#tips {
+    height: 7.2%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+.noteLayer {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    background: rgba(0,0,0,0.7);
+    z-index: 99999;
+    color: #ffffff;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 200px;
+    margin-left: -100px;
+}
+.noteLayer p {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+.noteLayer button {
+    display: block;
+    background: none;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    padding: 5px 0;
+}
